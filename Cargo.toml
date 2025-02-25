@@ -1,0 +1,20 @@
+[package]
+name = "ansible-playbook-editor"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "ansible-playbook-editor"
+path = "src/main.rs"
+
+[dependencies]
+erased-serde = "0.4.5"
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9.34"
+typetag = "0.2.19"
+syn = "2.0.98"
+quote = "1.0.38"
+proc-macro2 = "1.0.93"
+clap = { version = "4.5.30", features = ["derive"] }
+serde_json = "1.0.139"
+bon = "3.3.2"
